@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2e0fbd8b-143a-4434-8db4-c5a538e785b6"
+      }
+    },
+    "owner": "cubo1991"
   }
 }
