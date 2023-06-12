@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { alienList } from './store/alienList';
 import AlienList from './screens/AlienList';
+import Home from './screens/Home';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Home" options={{ title: 'Home' }} component={Home}/>
         <Stack.Screen name="Aliens" component={AlienList} />
       </Stack.Navigator>
     </NavigationContainer>
