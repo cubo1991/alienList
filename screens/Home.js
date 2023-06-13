@@ -12,6 +12,10 @@ const Home = ({navigation}) => {
       title= "Buscar alien"
       onPress={() => navigation.navigate('Aliens')}
       />
+      <Button
+      title= "Seleccion de aliens"
+      onPress={() => navigation.navigate('Selección de Alien')}
+      />
     </View>
   )
 }

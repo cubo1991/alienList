@@ -8,6 +8,8 @@ import axios from 'axios';
 import { alienList } from './store/alienList';
 import AlienList from './screens/AlienList';
 import Home from './screens/Home';
+import 'expo-dev-client';
+import AlienSelector from './screens/AlienSelector';
 
 const Stack = createStackNavigator();
 
@@ -33,6 +35,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" options={{ title: 'Home' }} component={Home}/>
         <Stack.Screen name="Aliens" component={AlienList} />
+        <Stack.Screen name="Selección de Alien" component={AlienSelector}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
